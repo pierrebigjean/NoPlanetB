@@ -1,0 +1,14 @@
+.firstpage-background {
+  background-color: $NPB-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo-anime {
+  background-image: image-url('logo-anime-gif.gif');
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+}
