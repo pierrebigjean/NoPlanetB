@@ -1,22 +1,31 @@
 <div class="navbar">
-  <div class="logo"></div>
+  <%= link_to root_path do %>
+    <div class="logo"></div>
+  <% end %>
 
   <div class="menu">
+    <%= link_to manifeste_path, remote: true do %>    
+      <div class="menu-title" id="manifeste">
+        MANIFESTE
+      </div>  
+    <% end %>
 
-    <div class="menu-title">
-      MANIFESTE
-    </div>
+    <%= link_to home_path, remote: true do %>
+      <div class="menu-title" id="projets">
+        PROJETS
+      </div>   
+    <% end %>
 
-    <div class="menu-title">
-      PROJETS
-    </div>
+    <%= link_to team_path, remote: true do %>
+      <div class="menu-title" id="l'équipe">
+        L'EQUIPE
+      </div>  
+    <% end %>
 
-    <div class="menu-title">
-      L'EQUIPE
-    </div>
-
-    <div class="menu-title">
-      CONTACT
-    </div>
+    <%= link_to contact_path, remote: true do %>
+      <div class="menu-title" id="contact">
+        CONTACT
+      </div> 
+    <% end %>
   </div>
 </div>

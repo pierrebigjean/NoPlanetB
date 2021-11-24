@@ -5,6 +5,12 @@ class PagesController < ApplicationController
   def first_page
   end
 
-  def projects
+  def contact
+  end
+
+  def team
+  end
+
+  def manifeste
   end
 end

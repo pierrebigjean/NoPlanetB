@@ -1,20 +1,22 @@
 .navbar {
-  position: absolute;
+  position: sticky;
   z-index: 100;
   width: 100%;
+  top: 0px;
   height: 120px;
   display: flex;
   justify-content: center;
 }
 
 .logo {
-  background-image: image-url('logo.png');
-  height: 100px;
-  width: 100px;
+  background-image: image_url("logo.png");
+  height: 80px;
+  width: 80px;
   background-size: cover;
-  filter: invert(1);
   position: absolute;
   left: 10px;
+  margin: 30px;
+  top: 0px;
 }
 
 .menu {
@@ -22,10 +24,24 @@
   .menu-title {
     position: relative;
     margin: auto 30px auto 30px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
-    transition: all 0.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+    color: $NPB-white;
+    // transition: all 0.5s cubic-bezier(0.165, 0.54, 0.44, 1);
     cursor: pointer;
+
+    &::after {
+      content: '.';
+      position: absolute;
+      top: -50px;
+      right: -20px;
+      font-size: 54px;
+      font-weight: 600;
+    }
+
+    &:hover {
+      color: $NPB-yellow;
+    }
   }
 }
