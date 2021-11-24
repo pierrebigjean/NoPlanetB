@@ -1,0 +1,22 @@
+.whitetext {
+  color: $NPB-white;
+  font-weight: 200;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.whitebigtitle {
+  color: $NPB-white;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.sectiontitle {
+  transition: all 0.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+  cursor: pointer;
+  color: $NPB-white;
+  font-weight: 900;
+  font-size: 70px;
+  letter-spacing: 1px;
+}

@@ -23,6 +23,7 @@ import "bootstrap";
 import { initFirstPage } from "../pages/first_page"
 import { initNavbar } from "../components/navbar"
 import { initpagesColor } from "../components/pagescolor"
+import { initManifeste } from "../pages/manifeste"
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -33,6 +34,9 @@ document.addEventListener('turbolinks:load', () => {
   initFirstPage();
   initpagesColor();
   initNavbar();
+  initManifeste();
 });
 
 import "controllers"
+
+
