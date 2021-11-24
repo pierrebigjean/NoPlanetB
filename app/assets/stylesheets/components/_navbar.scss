@@ -6,6 +6,7 @@
   height: 120px;
   display: flex;
   justify-content: center;
+  transition: all 0.6s cubic-bezier(0.165, 0.54, 0.44, 1);
 }
 
 .logo {

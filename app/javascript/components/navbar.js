@@ -14,6 +14,33 @@ const initNavbar = () => {
   if (document.location.pathname === "/contact") {
     document.getElementById("contact").style.color = "#FED766";
   }
+
+  const navbar = document.querySelector(".navbar")
+
+  if (navbar) {
+    window.scrollTo({
+      top: 1,
+      behavior: 'smooth'
+    });
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 0 && window.scrollY < 40) {
+        navbar.classList.remove("opacity");
+      } else if (window.scrollY >= 40) {
+        navbar.classList.add('opacity');
+      }
+    });
+
+    window.onscroll = function(e) {
+      // print "false" if direction is down and "true" if up
+      if ((this.oldScroll > this.scrollY === false) && this.scrollY > 2)  {
+        navbar.classList.add('opacity');
+      } else {  
+        navbar.classList.remove("opacity");
+      }
+      this.oldScroll = this.scrollY; 
+    };
+  }
 }
 
 export { initNavbar };

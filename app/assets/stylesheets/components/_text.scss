@@ -3,10 +3,43 @@
   font-weight: 200;
   font-size: 17px;
   letter-spacing: 1px;
+  // text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.darktext {
+  font-weight: 200;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.whitetitle {
+  color: $NPB-white;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 3px;
+  text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.whitelighttext {
+  color: $NPB-white;
+  font-weight: 100;
+  font-size: 14px;
+  text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.darklighttext {
+  font-weight: 100;
+  font-size: 14px;
 }
 
 .whitebigtitle {
   color: $NPB-white;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.darkbigtitle {
   font-weight: 700;
   font-size: 40px;
   letter-spacing: 3px;

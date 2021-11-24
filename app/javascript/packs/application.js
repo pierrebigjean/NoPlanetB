@@ -35,8 +35,10 @@ document.addEventListener('turbolinks:load', () => {
   initpagesColor();
   initNavbar();
   initManifeste();
+  initHome();
 });
 
 import "controllers"
+import { initHome } from "../pages/home"
 
 

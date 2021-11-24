@@ -1,1 +1,116 @@
-// Specific CSS for your home-page
+// Specific CSS for your home-page*
+.dixmat {
+  position: sticky;
+  transition: all 0.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+  top: 0px;
+}
+
+.xr {
+  position: sticky;
+  transition: all 0.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+  top: 0px;
+}
+
+.dixmattext {
+  top: 15vh;
+  margin-left: 10vh;
+  z-index: 10;
+  position: sticky;
+  transition: all 0.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+  height: 0px;
+}
+
+.xrtext {
+  top: 55vh;
+  margin-right: 10vh;
+  z-index: 10;
+  position: sticky;
+  transition: all 0.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+  height: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.labeltext {
+  top: 80vh;
+  margin-left: 10vh;
+  z-index: 10;
+  position: sticky;
+  transition: all 0.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+  height: 0px;
+}
+
+#boucheesdoubles {
+  position: relative;
+  top: 46%;
+  left: 6%;
+  color: $NPB-yellow;
+  width: 80%;
+  transition: all 1s cubic-bezier(0.165, 0.54, 0.44, 1);
+}
+
+.dixmatcover {
+  background-image: image-url('10matcover.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  transition: all 1s cubic-bezier(0.165, 0.54, 0.44, 1);
+}
+
+.xrcover {
+  background-image: image-url('extinction-rebellion-cover.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  filter: brightness(0.4);
+  transition: all 1s cubic-bezier(0.165, 0.54, 0.44, 1);
+}
+
+.dixmatcards {
+  display: inline-flex;
+  width: 93%;
+  margin-left: 3%;
+  position: relative;
+  top: 50%;
+  height: 40%;
+  .card {
+    transition: all 1s cubic-bezier(0.165, 0.54, 0.44, 1);
+    position: relative;
+    margin: auto 20px auto 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: transparent;
+    .cardcontent {
+      flex-grow: 1;
+    }
+  }
+}
+
+#alternatives {
+  background-image: image-url('alternatives-peu-accessibles.png');
+  height: 200px;
+  background-size: cover;
+}
+
+#desequilibre {
+  background-image: image-url('desequilibre-alimentaire.png');
+  height: 200px;
+  background-size: cover;
+}
+
+#urgence {
+  background-image: image-url('urgence-ecologique.png');
+  height: 200px;
+  background-size: cover;
+}
+
+#explosion {
+  background-image: image-url('explosion-demographique.png');
+  height: 200px;
+  background-size: cover;
+}
