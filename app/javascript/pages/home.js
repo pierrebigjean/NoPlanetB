@@ -27,7 +27,7 @@ const initHome = () => {
         labeltext.classList.remove('opacity');
       } else if (window.scrollY >= 160 && window.scrollY < 430) {
         dixMatCover.classList.remove('opacity');
-        dixMatText.style.top = "15vh";
+        dixMatText.style.top = "120px";
         bouchees.classList.add('opacity');
         xrtext.classList.add('opacity');
         labeltext.classList.add('opacity');

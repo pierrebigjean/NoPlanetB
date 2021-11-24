@@ -33,7 +33,7 @@ const initNavbar = () => {
 
     window.onscroll = function(e) {
       // print "false" if direction is down and "true" if up
-      if ((this.oldScroll > this.scrollY === false) && this.scrollY > 2)  {
+      if ((this.oldScroll > this.scrollY === false) && this.scrollY > 20)  {
         navbar.classList.add('opacity');
       } else {  
         navbar.classList.remove("opacity");
