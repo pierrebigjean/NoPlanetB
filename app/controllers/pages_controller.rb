@@ -13,4 +13,7 @@ class PagesController < ApplicationController
 
   def manifeste
   end
+
+  def soutenir
+  end
 end

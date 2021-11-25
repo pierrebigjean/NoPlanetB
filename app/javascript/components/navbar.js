@@ -15,6 +15,10 @@ const initNavbar = () => {
     document.getElementById("contact").style.color = "#FED766";
   }
 
+  if (document.location.pathname === "/soutenir") {
+    document.getElementById("soutenir").style.color = "#FED766";
+  }
+
   const navbar = document.querySelector(".navbar")
 
   if (navbar) {

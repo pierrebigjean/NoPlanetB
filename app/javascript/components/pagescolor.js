@@ -34,6 +34,14 @@ const initpagesColor = () => {
       setTimeout(() => { document.location.pathname = "/contact"; }, 300);
   
     })
+
+    document.getElementById("soutenir").addEventListener("click", (event) => {
+      event.preventDefault();
+      document.body.style.backgroundColor = "#008DD5"
+      navbar.style.backgroundColor = "transparent";
+      setTimeout(() => { document.location.pathname = "/soutenir"; }, 300);
+  
+    })
   
     if (document.location.pathname === "/home") {
       document.body.style.backgroundColor = "#0A0F0D";
@@ -49,6 +57,10 @@ const initpagesColor = () => {
   
     if (document.location.pathname === "/contact") {
       document.body.style.backgroundColor = "#C2A9A9";
+    }
+
+    if (document.location.pathname === "/soutenir") {
+      document.body.style.backgroundColor = "#008DD5";
     }
   }
 
