@@ -65,11 +65,11 @@ const initHome = () => {
         dixMat.classList.add("opacity")
         logoun.classList.remove("opacity")
         xrcover.classList.add("opacity")
+        xrtexts.classList.add("opacity")       
       } else if (window.scrollY >= 2500 && window.scrollY < 2700) {       
         xrcover.classList.remove("opacity")
-        xrtexts.classList.add("opacity")       
-      } else if (window.scrollY >= 2700 && window.scrollY < 3000) {       
         xrtexts.classList.remove("opacity")
+      } else if (window.scrollY >= 2700 && window.scrollY < 3000) {       
         xrtext2.classList.remove("opacity")
         logdeux.classList.add("opacity")
       } else if (window.scrollY >= 3000 && window.scrollY < 3730) {       

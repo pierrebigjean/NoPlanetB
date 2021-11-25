@@ -73,13 +73,21 @@
 
 .xrtexts, .labeltexts {
   position: relative;
-  top: 50%;
+  top: 45%;
   left: 5%;
   width: 90%;
   display: flex;
   transition: all 1s cubic-bezier(0.165, 0.54, 0.44, 1);
+  .whitetext {
+    width: 50%;
+    margin-right: 30px;
+  }
   video {
     transition: all 2.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+    border-radius: 20px;
+    margin-left: 20px;
+    border: 2px solid white;
+    flex-grow: 1;
   }
 }
 
