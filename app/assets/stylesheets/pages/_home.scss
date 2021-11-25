@@ -11,6 +11,12 @@
   top: 0px;
 }
 
+.label {
+  position: sticky;
+  transition: all 0.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+  top: 0px;
+}
+
 .dixmattext {
   top: 120px;
   margin-left: 10vh;
@@ -21,7 +27,7 @@
 }
 
 .xrtext {
-  top: 50vh;
+  top: 55vh;
   margin-right: 10vh;
   z-index: 10;
   position: sticky;
@@ -33,7 +39,7 @@
 }
 
 .labeltext {
-  top: 70vh;
+  top: 75vh;
   margin-left: 10vh;
   z-index: 10;
   position: sticky;
@@ -50,7 +56,7 @@
 }
 
 .dixmatcover {
-  background-image: image-url('10matcover.png');
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.2) 100%, rgba(159,159,159,0.2) 100%), image-url('10matcover.png');
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -58,11 +64,30 @@
 }
 
 .xrcover {
-  background-image: image-url('extinction-rebellion-cover.png');
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.6) 100%, rgba(159,159,159,0.6) 100%), image-url('extinction-rebellion-cover.png');
   height: 100vh;
   width: 100%;
   background-size: cover;
-  filter: brightness(0.4);
+  transition: all 1s cubic-bezier(0.165, 0.54, 0.44, 1);
+}
+
+.xrtexts, .labeltexts {
+  position: relative;
+  top: 50%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  transition: all 1s cubic-bezier(0.165, 0.54, 0.44, 1);
+  video {
+    transition: all 2.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+  }
+}
+
+.labelcover {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.6) 100%, rgba(159,159,159,0.6) 100%), image-url('label.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
   transition: all 1s cubic-bezier(0.165, 0.54, 0.44, 1);
 }
 
@@ -99,6 +124,7 @@
   align-items: center;
   justify-content: center;
   transition: all 0.4s cubic-bezier(0.165, 0.54, 0.44, 1);
+  border: 2px solid white;
   .fas {
     color: $NPB-white;
     opacity: 0;
@@ -124,6 +150,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid white;
   transition: all 0.4s cubic-bezier(0.165, 0.54, 0.44, 1);
   .fas {
     color: $NPB-white;
@@ -148,6 +175,7 @@
   z-index: 10;
   cursor: pointer;
   display: flex;
+  border: 2px solid white;
   align-items: center;
   justify-content: center;
   transition: all 0.4s cubic-bezier(0.165, 0.54, 0.44, 1);
@@ -172,6 +200,7 @@
   background-position: center;
   flex-grow: 1;
   z-index: 10;
+  border: 2px solid white;
   cursor: pointer;
   display: flex;
   align-items: center;

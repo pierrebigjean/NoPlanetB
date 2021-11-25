@@ -13,8 +13,14 @@ const initHome = () => {
   const desequilibre = document.getElementById("desequilibrecard")
 
   const logoun = document.getElementById("logoun")
+  const logdeux = document.getElementById("logdeux")
 
   const xrcover = document.querySelector(".xrcover")
+  const xrtext2 = document.querySelector("#xrtext2")
+  const xrtexts = document.querySelector(".xrtexts")
+
+  const labelcover = document.querySelector(".labelcover")
+  const labeltexts = document.querySelector(".labeltexts")
   
   if (dixMatCover) {
 
@@ -59,9 +65,24 @@ const initHome = () => {
         dixMat.classList.add("opacity")
         logoun.classList.remove("opacity")
         xrcover.classList.add("opacity")
-      } else if (window.scrollY >= 2500) {       
+      } else if (window.scrollY >= 2500 && window.scrollY < 2700) {       
         xrcover.classList.remove("opacity")
-      }    
+        xrtexts.classList.add("opacity")       
+      } else if (window.scrollY >= 2700 && window.scrollY < 3000) {       
+        xrtexts.classList.remove("opacity")
+        xrtext2.classList.remove("opacity")
+        logdeux.classList.add("opacity")
+      } else if (window.scrollY >= 3000 && window.scrollY < 3730) {       
+        xrcover.classList.add("opacity")
+        xrtext2.classList.add("opacity")
+        logdeux.classList.remove("opacity")
+        labelcover.classList.add("opacity")
+      } else if (window.scrollY >= 3730 && window.scrollY < 4000) {
+        labelcover.classList.remove("opacity")
+        labeltexts.classList.remove("opacity")
+      } else if (window.scrollY >= 4000) {
+        labeltexts.classList.remove("opacity")
+      }     
 
 
     });
