@@ -1,0 +1,71 @@
+.teamcard {
+  min-height: 300px;
+  min-width: 200px;
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+  .position {
+    transition: all 0.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+    color: $NPB-white;
+    font-weight: 600;
+    font-size: 25px;
+    opacity: 0;
+    margin: 5px;
+    margin-left: 10px;
+  }
+
+  .citation {
+    transition: all 0.5s cubic-bezier(0.165, 0.54, 0.44, 1);
+    color: $NPB-white;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0;
+    flex-grow: 1;
+    margin: 5px;
+    margin-left: 10px;
+  }
+}
+
+#pierre {
+  background-image: image-url('pierre.jpg');
+  &:hover {
+    .position, .citation {
+      opacity: 1;
+    }
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(47,47,57,0.8) 20%, rgba(66,66,84,0.25) 35%, rgba(120,120,120,0.3) 100%), image-url('pierre.jpg');
+  }
+}
+
+#marianne {
+  background-image: image-url('marianne.jpg');
+  &:hover {
+    .position, .citation {
+      opacity: 1;
+    }
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(47,47,57,0.8) 20%, rgba(66,66,84,0.25) 35%, rgba(120,120,120,0.3) 100%), image-url('marianne.jpg');
+  }
+}
+
+#lucie {
+  background-image: image-url('lucie.jpg'); 
+  &:hover {
+    .position, .citation {
+      opacity: 1;
+    }
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(47,47,57,0.8) 20%, rgba(66,66,84,0.25) 35%, rgba(120,120,120,0.3) 100%), image-url('lucie.jpg');
+  }
+}
+
+#raphaelle {
+  background-image: image-url('raphaelle.png'); 
+  &:hover {
+    .position, .citation {
+      opacity: 1;
+    }
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(47,47,57,0.8) 20%, rgba(66,66,84,0.25) 35%, rgba(120,120,120,0.3) 100%), image-url('raphaelle.png');
+  }
+}

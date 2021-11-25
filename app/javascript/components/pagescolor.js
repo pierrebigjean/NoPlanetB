@@ -21,8 +21,8 @@ const initpagesColor = () => {
   
     document.getElementById("l'équipe").addEventListener("click", (event) => {
       event.preventDefault();
-      document.body.style.backgroundColor = "#008DD5"
-      navbar.style.backgroundColor = "transparent";
+      document.body.style.backgroundColor = "#0A0F0D"
+      navbar.style.backgroundColor = "#0A0F0D";
       setTimeout(() => { document.location.pathname = "/team"; }, 300);
    
     })
@@ -44,7 +44,7 @@ const initpagesColor = () => {
     }
     
     if (document.location.pathname === "/team") {
-      document.body.style.backgroundColor = "#008DD5";
+      document.body.style.backgroundColor = "#0A0F0D";
     }
   
     if (document.location.pathname === "/contact") {
