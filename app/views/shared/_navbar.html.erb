@@ -4,16 +4,17 @@
   <% end %>
 
   <div class="menu">
-    <%= link_to manifeste_path, remote: true do %>    
-      <div class="menu-title" id="manifeste">
-        MANIFESTE
-      </div>  
-    <% end %>
 
     <%= link_to home_path, remote: true do %>
       <div class="menu-title" id="projets">
         PROJETS
       </div>   
+    <% end %>
+    
+    <%= link_to manifeste_path, remote: true do %>    
+      <div class="menu-title" id="manifeste">
+        MANIFESTE
+      </div>  
     <% end %>
 
     <%= link_to team_path, remote: true do %>

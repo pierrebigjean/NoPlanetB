@@ -11,13 +11,14 @@
 
 .logo {
   background-image: image_url("logo.png");
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   background-size: cover;
   position: absolute;
   left: 10px;
   margin: 30px;
   top: 0px;
+  margin-top: 20px;
 }
 
 .menu {
